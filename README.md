@@ -8,3 +8,5 @@ This is the source from following [this tutorial](https://www.youtube.com/watch?
 [Gradle Project API](https://docs.gradle.org/current/javadoc/org/gradle/api/Project.html)
 
 [The Java Plugin](https://docs.gradle.org/current/userguide/java_plugin.html)
+
+[The Android Plugin](https://developer.android.com/reference/tools/gradle-api)
