@@ -1,0 +1,31 @@
+// needed to run this:
+// gradlew build
+plugins {
+    id 'java'
+}
+
+// needed to run this:
+// java -jar build/libs/hello-gradle.jar
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.mattsploration.hello.gradle.HelloGradle'
+    }
+}
+
+// needed to pull dependencies
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    // use JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+}
+
+test {
+    // use JUnit 5
+    // Some usage shown here:
+    // https://junit.org/junit5/docs/current/user-guide/#running-tests-build-gradle
+    useJUnitPlatform()
+}
